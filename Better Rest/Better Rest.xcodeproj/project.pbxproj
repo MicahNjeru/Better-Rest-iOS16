@@ -19,6 +19,7 @@
 		757341222A120DB400237975 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		757341242A120DB400237975 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		757341272A120DB400237975 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		75A3EB922A1388B40007E4A2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +56,7 @@
 				757341222A120DB400237975 /* ContentView.swift */,
 				757341242A120DB400237975 /* Assets.xcassets */,
 				757341262A120DB400237975 /* Preview Content */,
+				75A3EB922A1388B40007E4A2 /* README.md */,
 			);
 			path = "Better Rest";
 			sourceTree = "<group>";
