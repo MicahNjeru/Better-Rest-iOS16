@@ -1,6 +1,6 @@
 #  Better Rest iOS 16
-__ This application uses Apple's CoreML framework to create an ML model, train the model and use it in the app to 
-predict how many hours of sleep the user needs after taking a given amount of coffee in a day. __
+__This application uses Apple's CoreML framework to create an ML model, train the model and use it in the app to 
+predict how many hours of sleep the user needs after taking a given amount of coffee in a day.__
 
 - The ML Model was created and trained using Apple's CreateML framework.
 - The data was obtained from a randomly generated csv file (do not use the data for training production ready models).
