@@ -10,9 +10,33 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var wakeUp = Date.now
+    @State private var sleepAmount = 8.0
+    @State private var coffeeAmount = 1
     
     var body: some View {
-        DatePicker("Please pick a date", selection: $wakeUp)
+        NavigationView{
+            VStack{
+                Text("What time do you want to wake up?")
+                    .font(.headline)
+                DatePicker("Please enter a time", selection: $wakeUp, displayedComponents: .hourAndMinute)
+                    .labelsHidden()
+                
+                Text("Desired amount of sleep in hours")
+                    .font(.headline)
+                Stepper("\(sleepAmount.formatted()) hours", value: $sleepAmount, in: 4...12, step: 0.25)
+                
+                Text("Daily coffee intake")
+                    .font(.headline)
+                Stepper(coffeeAmount == 1 ? "1 cup" : "\(coffeeAmount) cups", value: $coffeeAmount, in: 1...10)
+            }
+            .navigationTitle("Better Rest")
+            .toolbar{
+                Button("Calculate", action: calculateBedtime)
+            }
+        }
+    }
+    func calculateBedtime(){
+        
     }
 }
 
